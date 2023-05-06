@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export PATH=$PATH:/usr/local/go/bin
+
+# Run the Go linter on all modified .go files
+$(go env GOPATH)/bin/golangci-lint run ./...
